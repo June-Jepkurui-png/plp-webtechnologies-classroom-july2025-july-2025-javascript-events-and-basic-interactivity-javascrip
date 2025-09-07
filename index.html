@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Web Page</title>
+  <title>Interactive & Animated Web Page</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Interactive Web Page with JavaScript</h1>
+  <h1>✨ Interactive & Animated Web Page ✨</h1>
 
   <!-- Light/Dark Mode Toggle -->
-  <button id="theme-toggle">Toggle Dark Mode </button>
+  <button id="theme-toggle">Toggle Dark Mode</button>
 
   <!-- Counter Feature -->
   <div class="counter">
@@ -50,6 +50,22 @@
   </form>
 
   <p id="successMsg"></p>
+
+  <!-- CSS Animation + Modal Section -->
+  <h2>CSS & JS Animations</h2>
+  <button class="animated-btn">Hover Me</button>
+  <div class="box"></div>
+
+  <button id="animateBoxBtn">Animate Box</button>
+  <button id="toggleModalBtn">Show Modal</button>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModalBtn" class="close">&times;</span>
+      <p>🌙 This is a modal with CSS + JS animation!</p>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

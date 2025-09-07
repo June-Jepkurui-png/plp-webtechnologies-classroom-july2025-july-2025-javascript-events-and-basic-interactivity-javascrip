@@ -1,4 +1,4 @@
-// Light/Dark Mode Toggle
+// 🌗 Light/Dark Mode Toggle
 const themeToggle = document.getElementById("theme-toggle");
 themeToggle.addEventListener("click", () => {
   document.body.classList.toggle("dark-mode");
@@ -27,7 +27,7 @@ faqButtons.forEach(button => {
 
 // ✅ Form Validation
 document.getElementById("signup-form").addEventListener("submit", function(event) {
-  event.preventDefault(); // prevent form submission
+  event.preventDefault();
   let isValid = true;
 
   // Name validation
@@ -58,9 +58,37 @@ document.getElementById("signup-form").addEventListener("submit", function(event
     document.getElementById("passwordError").textContent = "";
   }
 
-  // If all valid
   if (isValid) {
     document.getElementById("successMsg").textContent = "🎉 Form submitted successfully!";
     this.reset();
   }
+});
+
+// 🎨 Animations & Modal Logic
+let animationCount = 0;
+function incrementCounter(step) {
+  animationCount += step;
+  return animationCount;
+}
+function toggleClass(element, className) {
+  element.classList.toggle(className);
+}
+function animateBox() {
+  const box = document.querySelector(".box");
+  box.style.transition = "transform 0.5s ease";
+  box.style.transform = `rotate(${incrementCounter(45)}deg)`;
+}
+document.getElementById("animateBoxBtn").addEventListener("click", animateBox);
+
+const modal = document.getElementById("modal");
+const toggleModalBtn = document.getElementById("toggleModalBtn");
+const closeModalBtn = document.getElementById("closeModalBtn");
+
+toggleModalBtn.addEventListener("click", () => {
+  toggleClass(modal, "show");
+  modal.classList.remove("hidden");
+});
+closeModalBtn.addEventListener("click", () => {
+  toggleClass(modal, "show");
+  setTimeout(() => modal.classList.add("hidden"), 500);
 });
