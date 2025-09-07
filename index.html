@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interactive Web Page with JavaScript</h1>
+
+  <!-- Light/Dark Mode Toggle -->
+  <button id="theme-toggle">Toggle Dark Mode </button>
+
+  <!-- Counter Feature -->
+  <div class="counter">
+    <p>Count: <span id="count">0</span></p>
+    <button id="increment">+ Add</button>
+    <button id="decrement">- Subtract</button>
+  </div>
+
+  <!-- FAQ Section -->
+  <div class="faq">
+    <h2>FAQ</h2>
+    <div class="faq-item">
+      <button class="faq-question">What is JavaScript?</button>
+      <p class="faq-answer">JavaScript is the language of the web that makes pages interactive!</p>
+    </div>
+  </div>
+
+  <!-- Form with Validation -->
+  <h2>Sign Up Form</h2>
+  <form id="signup-form">
+    <label>
+      Name: <input type="text" id="name" required>
+      <span class="error" id="nameError"></span>
+    </label><br>
+
+    <label>
+      Email: <input type="text" id="email" required>
+      <span class="error" id="emailError"></span>
+    </label><br>
+
+    <label>
+      Password: <input type="password" id="password" required>
+      <span class="error" id="passwordError"></span>
+    </label><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="successMsg"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
