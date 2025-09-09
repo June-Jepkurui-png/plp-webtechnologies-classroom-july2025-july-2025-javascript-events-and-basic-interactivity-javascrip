@@ -16,8 +16,8 @@ Let’s start with the basics of **event handling**. You'll set up JavaScript to
 
 Now it’s time to apply what you’ve learned by creating your own mini interactive features. You can build things like:
 
-* A light/dark mode toggle
-* A counter or button game
+* A light/dark mode toggle.
+* A counter or button game.
 * A collapsible FAQ section
 * A simple dropdown menu
 * A tabbed interface
