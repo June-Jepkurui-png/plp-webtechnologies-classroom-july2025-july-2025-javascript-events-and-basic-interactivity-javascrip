@@ -18,8 +18,8 @@ Now it’s time to apply what you’ve learned by creating your own mini interac
 
 * A light/dark mode toggle.
 * A counter or button game.
-* A collapsible FAQ section
-* A simple dropdown menu
+* A collapsible FAQ section.
+* A simple dropdown menu.
 * A tabbed interface
 
 **Goal:** Use DOM manipulation + events to make the page dynamic and engaging. Be creative!
